@@ -84,7 +84,7 @@ $(document).ready(function(){
 
   //监听键盘方向操作
   function eventCodeListener(){
-    $(document).keypress(function(event){
+    $(document).keyup(function(event){
     if(event.keyCode === 37)
       toLeft();
     else if(event.keyCode === 38)
@@ -290,13 +290,27 @@ $(document).ready(function(){
 
   //出现新数字
   function newNum(){
-    var num = Math.floor(Math.random()*15+1);
-    for(; cubes[num] !== 0;)
-      num = Math.floor(Math.random()*15+1);
-    if(num % 2 === 0)
-      cubes[num] = 2;
-    else
-      cubes[num] = 4;
+    var randomNum = new Array;
+    var num = -1;
+    var j = 0;
+    for(var i = 0; i < 16; i++){
+      if(cubes[i] === 0){
+        randomNum[j++] = i;
+      }
+    }
+    if(randomNum.length === 1){
+      if(randomNum[0] % 2 === 0)
+        cubes[randomNum[0]] = 2;
+      else
+        cubes[randomNum[0]] = 4;
+    }
+    else{
+      num = Math.floor(Math.random()*(randomNum.length - 1)+1);
+      if(randomNum[num] % 2 === 0)
+        cubes[randomNum[num]] = 2;
+      else
+        cubes[randomNum[num]] = 4;
+    }
   }
 
   //初始出现数字
