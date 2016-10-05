@@ -11,6 +11,20 @@ $(document).ready(function(){
   var judge33 = 0;
   var judge44 = 0; 
   
+  //背景音乐
+  var musicjud = 1;
+  var music = document.getElementById("music");
+  $("#btnMusic").click(function(){
+    if(musicjud === 1){
+      music.pause();
+      musicjud = 0;
+    }
+    else{
+      music.play();
+      musicjud = 1;
+    }
+  })
+  
   //设置相关按钮
   function setBtn(){
     $("#btnRules").click(function(){
@@ -58,6 +72,13 @@ $(document).ready(function(){
         else if(cubes[i] === 2048) 
           allCube[i].className = "cube2048";
       }
+    }
+    if(judge2048() === 1){
+      $("#spanPrompt").html("You win!");
+      $("#spanPrompt").css("font-size", "40px");
+      $("#spanPrompt").css("backgroundColor", "#c2c6cd");
+      keypress.preventDefault();
+      return;
     }
   }
 
@@ -302,6 +323,7 @@ $(document).ready(function(){
     if(judge1 === 0 && judge2 === 0 && judge3 === 0 && judge4 === 0 && judgeNum() === 0){
       $("#spanPrompt").html("Game over");
       $("#spanPrompt").css("font-size", "40px");
+      $("#spanPrompt").css("backgroundColor", "#c2c6cd");
       render();
       return 0;
     }
@@ -338,6 +360,16 @@ $(document).ready(function(){
     var judge = 0;
     for(var i = 0; i < 16; i++){
       if(cubes[i] === 0)
+        judge = 1;
+    }
+    return judge;
+  }
+
+  //检查是否已有2048
+  function judge2048(){
+    var judge = 0;
+    for(var i = 0; i < 16; i++){
+      if(cubes[i] === 2048)
         judge = 1;
     }
     return judge;

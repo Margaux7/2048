@@ -1,16 +1,16 @@
 $border-radius: 6px;
-$color-cube0: #dcdcdc;
-$color-cube2: #95fed0;
-$color-cube4: #bbee9e;
-$color-cube8: #e0de6d;
-$color-cube16: #f0c17f;
-$color-cube32: #ffa391;
-$color-cube64: #51f0e8;
-$color-cube128: #0ce3ff;
-$color-cube256: #06acf1;
-$color-cube512: #e78166;
-$color-cube1024: #cf5f3b;
-$color-cube2048: #0075e2;
+$color-cube0: #dcdccc;
+$color-cube2: #f0dfaf;
+$color-cube4: #cc9393;
+$color-cube8: #6f6f6f;
+$color-cube16: #9fafaf;
+$color-cube32: #709080;
+$color-cube64: #cce5ed;
+$color-cube128: #fcc5c0;
+$color-cube256: #3d5974;
+$color-cube512: #9d8b86;
+$color-cube1024: #cbd7e2;
+$color-cube2048: #be0d51;
 
 
 html,body{
@@ -18,7 +18,7 @@ html,body{
   padding: 0;
 }
 body{
-  background-color: #003768;
+  background-color: #e5d4c6;
   padding: 2%;
 }
 .title{
@@ -28,26 +28,32 @@ body{
   text-align: center;
   color: #4682b4;
 }
+.btn-music{
+  width: 30px;
+  height: 30px;
+  float: left;
+}
 .rules{
   display: none;
   float: left;
   width: 300px;
-  color: #d3e5f1;
+  color: #4682b4;
 }
 .btn-rules{
   height: 46px;
-  background-color: #4682b4;
+  background-color: #e09898;
   border-radius: $border-radius;
-  color: #d3e5f1;
+  color: #dcdccc;
   font-size: 18px;
   font-weight: bold;
-  border: solid 1px #4682b4;
+  border: solid 1px #e09898;
 }
 .btn-again, .btn-back{
   @extend .btn-rules;
 }
 .prompt{
   color: #4682b4;
+  display: block;
 }
 .box{
   display: -webkit-box;
@@ -67,7 +73,7 @@ body{
 .box-play{
   @extend .box;
   justify-content: space-around;
-  background-color: #a9a9a9;
+  background-color: #bca3a3;
   border-radius: $border-radius;
   padding: 8px;
   width: 550px;
@@ -76,12 +82,11 @@ body{
 .box-play{
   div{
   border-radius: $border-radius;
-  background-color: #dcdcdc;
   width: 110px;
   height: 110px;
   font-size: 54px;
   font-weight: bold;
-  color: #555577;
+  color: #dcdccc;
   text-align: center;
   line-height: 110px;
   }
@@ -90,38 +95,42 @@ body{
 
 //设置不同颜色
 .cube0{
-  background-color: $color-cube0;
+  background-color: $color-cube0 !important;
 }
 .cube2{
-  background-color: $color-cube2;
+  background-color: $color-cube2 !important;
+  color: #555577 !important;
 }
 .cube4{
-  background-color: $color-cube4;
+  background-color: $color-cube4 !important;
 }
 .cube8{
-  background-color: $color-cube8;
+  background-color: $color-cube8 !important;
 }
 .cube16{
-  background-color: $color-cube16;
+  background-color: $color-cube16 !important;
 }
 .cube32{
-  background-color: $color-cube32;
+  background-color: $color-cube32 !important;
 }
 .cube64{
-  background-color: $color-cube64;
+  background-color: $color-cube64 !important;
+  color: #555577 !important;
 }
 .cube128{
-  background-color: $color-cube128;
+  background-color: $color-cube128 !important;
+  color: #555577 !important;
 }
 .cube256{
-  background-color: $color-cube256;
+  background-color: $color-cube256 !important;
 }
 .cube512{
-  background-color: $color-cube512;
+  background-color: $color-cube512 !important;
 }
 .cube1024{
-  background-color: $color-cube1024;
+  background-color: $color-cube1024 !important;
+  color: #555577 !important;
 }
 .cube2048{
-  background-color: $color-cube2048;
+  background-color: $color-cube2048 !important;
 }
