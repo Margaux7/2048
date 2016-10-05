@@ -54,7 +54,7 @@ body {
   width: 550px;
   height: 550px; }
 
-.cube {
+.box-play div {
   border-radius: 6px;
   background-color: #dcdcdc;
   width: 110px;
@@ -64,5 +64,41 @@ body {
   color: #555577;
   text-align: center;
   line-height: 110px; }
+
+.cube0 {
+  background-color: #dcdcdc !important; }
+
+.cube2 {
+  background-color: #95fed0 !important; }
+
+.cube4 {
+  background-color: #bbee9e !important; }
+
+.cube8 {
+  background-color: #e0de6d !important; }
+
+.cube16 {
+  background-color: #f0c17f !important; }
+
+.cube32 {
+  background-color: #ffa391 !important; }
+
+.cube64 {
+  background-color: #51f0e8 !important; }
+
+.cube128 {
+  background-color: #0ce3ff !important; }
+
+.cube256 {
+  background-color: #06acf1 !important; }
+
+.cube512 {
+  background-color: #e78166 !important; }
+
+.cube1024 {
+  background-color: #cf5f3b !important; }
+
+.cube2048 {
+  background-color: #0075e2 !important; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,5 @@
 $border-radius: 6px;
+$color-cube0: #dcdcdc;
 $color-cube2: #95fed0;
 $color-cube4: #bbee9e;
 $color-cube8: #e0de6d;
@@ -72,7 +73,8 @@ body{
   width: 550px;
   height: 550px;
 }
-.cube{
+.box-play{
+  div{
   border-radius: $border-radius;
   background-color: #dcdcdc;
   width: 110px;
@@ -82,4 +84,44 @@ body{
   color: #555577;
   text-align: center;
   line-height: 110px;
+  }
+}
+
+
+//设置不同颜色
+.cube0{
+  background-color: $color-cube0;
+}
+.cube2{
+  background-color: $color-cube2;
+}
+.cube4{
+  background-color: $color-cube4;
+}
+.cube8{
+  background-color: $color-cube8;
+}
+.cube16{
+  background-color: $color-cube16;
+}
+.cube32{
+  background-color: $color-cube32;
+}
+.cube64{
+  background-color: $color-cube64;
+}
+.cube128{
+  background-color: $color-cube128;
+}
+.cube256{
+  background-color: $color-cube256;
+}
+.cube512{
+  background-color: $color-cube512;
+}
+.cube1024{
+  background-color: $color-cube1024;
+}
+.cube2048{
+  background-color: $color-cube2048;
 }

@@ -26,36 +26,48 @@ $(document).ready(function(){
 
   //渲染游戏格子
   function render(){
-    var allCube = document.getElementsByClassName("cube");
+    var allCube = document.getElementById("boxPlay").getElementsByTagName("div");
     for(var i = 0; i < 16; i++){
       if(cubes[i] === 0){
          allCube[i].innerHTML = '';
+         allCube[i].className = "cube0";
          allCube[i].style.backgroundColor = "#dcdcdc";
       }
       else if(cubes[i] !== 0){
         allCube[i].innerHTML = cubes[i];
         if(cubes[i] === 2)
-          allCube[i].style.backGroundColor = "#95fed0";
+          allCube[i].className = "cube2";
+          // allCube[i].style.backGroundColor = "#95fed0";
         else if(cubes[i] === 4)
-          allCube[i].style.backgroundColor = "#bbee9e";
-        else if(cubes[i] === 8) 
-          allCube[i].style.backgroundColor = "#e0de6d";
+          allCube[i].className = "cube4";
+          // allCube[i].style.backgroundColor = "#bbee9e";
+        else if(cubes[i] === 8)
+          allCube[i].className = "cube8"; 
+          // allCube[i].style.backgroundColor = "#e0de6d";
         else if(cubes[i] === 16) 
-          allCube[i].style.backgroundColor = "#f0c17f";
+          allCube[i].className = "cube16";
+          // allCube[i].style.backgroundColor = "#f0c17f";
         else if(cubes[i] === 32) 
-          allCube[i].style.backgroundColor = "#ffa391";
+          allCube[i].className = "cube32";
+          // allCube[i].style.backgroundColor = "#ffa391";
         else if(cubes[i] === 64) 
-          allCube[i].style.backgroundColor = "#51f0e8";
+          allCube[i].className = "cube64";
+          // allCube[i].style.backgroundColor = "#51f0e8";
         else if(cubes[i] === 128) 
-          allCube[i].style.backgroundColor = "#0ce3ff";
+          allCube[i].className = "cube128";
+          // allCube[i].style.backgroundColor = "#0ce3ff";
         else if(cubes[i] === 256) 
-          allCube[i].style.backgroundColor = "#06acf1";
+          allCube[i].className = "cube256";
+          // allCube[i].style.backgroundColor = "#06acf1";
         else if(cubes[i] === 512) 
-          allCube[i].style.backgroundColor = "#e78166";
+          allCube[i].className = "cube512";
+          // allCube[i].style.backgroundColor = "#e78166";
         else if(cubes[i] === 1024) 
-          allCube[i].style.backgroundColor = "#cf5f3b";
+          allCube[i].className = "cube1024";
+          // allCube[i].style.backgroundColor = "#cf5f3b";
         else if(cubes[i] === 2048) 
-          allCube[i].style.backgroundColor = "#0075e2";
+          allCube[i].className = "cube2048";
+          // allCube[i].style.backgroundColor = "#0075e2";
       }
     }
   }
@@ -352,6 +364,7 @@ $(document).ready(function(){
     judge33 = 0;
     judge44 = 0;
     $("#spanPrompt").html("Keep it up..");
+    $("#spanPrompt").css("font-size", "20px");
 
     for(var i = 0; i < 16; i++)   //数组初始化
       cubes[i] = 0;
