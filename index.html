@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My 2048</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet/main.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <p class="title">Welcome to game 2048</p>
+    <div class="rules" id="divRules">
+      <p>开始时棋盘内随机出现两个数字，出现的数字仅可能为2或4。</p>
+      <p>玩家可以使用键盘上的上下左右键，若棋盘内的数字出现位移或合并，视为有效移动。</p>
+      <p>玩家选择的方向上若有相同的数字则合并，每次有效移动可以同时合并，但不可以连续合并。</p>
+      <p>玩家选择的方向行或列前方有空格则出现位移。</p>
+      <p>每有效移动一步，棋盘的空位（无数字处）随机出现一个数字（依然可能为2或4）。</p>
+      <p>棋盘被数字填满，无法进行有效移动，判负，游戏结束。</p>
+      <p>棋盘上出现2048，判胜，游戏结束。</p>
+      <input type="button" class="btn-back" id="btnBack" value="back" hidefocus="hidefocus"></input>
+    </div>
+    <div class="box box-style">
+      <input type="button" class="btn-rules" id="btnRules" value="How to play" hidefocus="hidefocus"></input>
+      <span class="prompt" id="spanPrompt"></span>
+      <input type="button" class="btn-again" id="btnAgain" value="Try again" hidefocus="hidefocus"></input>  
+      <div class="box-play">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+    </div>
+  </body>
+</html>
