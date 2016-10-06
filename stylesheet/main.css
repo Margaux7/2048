@@ -6,8 +6,14 @@ body {
   background-color: #e5d4c6;
   padding: 2%; }
 
+.music {
+  border: none;
+  height: 70px;
+  width: 220px;
+  margin: -50px -50px -50px auto; }
+
 .title {
-  margin-top: -30px;
+  margin-top: -50px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
@@ -64,7 +70,7 @@ body {
   border-radius: 6px;
   width: 110px;
   height: 110px;
-  font-size: 54px;
+  font-size: 46px;
   font-weight: bold;
   color: #dcdccc;
   text-align: center;

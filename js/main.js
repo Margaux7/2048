@@ -10,21 +10,7 @@ $(document).ready(function(){
   var judge22 = 0;
   var judge33 = 0;
   var judge44 = 0; 
-  
-  //背景音乐
-  var musicjud = 1;
-  var music = document.getElementById("music");
-  $("#btnMusic").click(function(){
-    if(musicjud === 1){
-      music.pause();
-      musicjud = 0;
-    }
-    else{
-      music.play();
-      musicjud = 1;
-    }
-  })
-  
+
   //设置相关按钮
   function setBtn(){
     $("#btnRules").click(function(){
@@ -399,6 +385,7 @@ $(document).ready(function(){
     judge33 = 0;
     judge44 = 0;
     $("#spanPrompt").html("Keep it up..");
+    $("#spanPrompt").css("backgroundColor", "#e5d4c6");
     $("#spanPrompt").css("font-size", "20px");
 
     for(var i = 0; i < 16; i++)   //数组初始化
