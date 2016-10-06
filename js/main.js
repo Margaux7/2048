@@ -391,12 +391,12 @@ $(document).ready(function(){
     for(var i = 0; i < 16; i++)   //数组初始化
       cubes[i] = 0;
     initNum();
-    eventCodeListener();
   }
 
   function init(){
   setBtn();
   start();
+  eventCodeListener();
   }
 
   init();
